@@ -17,8 +17,20 @@ namespace Aspx
             }
 
             NewFunction(out var i);
-            
+
+            var method1 = i == 1 ? Method1() : Method2();
+
             Console.WriteLine(i);
+        }
+
+        private int Method2()
+        {
+            return 2;
+        }
+
+        private int Method1()
+        {
+            return 1;
         }
     }
 }
