@@ -17,6 +17,7 @@ namespace Cshtml.Controllers
 
         public IActionResult Index()
         {
+            int t = 1;
             return View();
         }
 

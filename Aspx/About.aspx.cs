@@ -11,7 +11,14 @@ namespace Aspx
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            void NewFunction(out int t)
+            {
+                t = 1;
+            }
+
+            NewFunction(out var i);
             
+            Console.WriteLine(i);
         }
     }
 }
