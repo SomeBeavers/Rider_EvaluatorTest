@@ -1,11 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Text;
+using System.Xml;
 using Net7_Console;using Net7_Lib;
 
 Console.WriteLine("Hello, World!");
 int t = 1;
 var t2 = t++;
-
+TextWriter _out = new StreamWriter(Stream.Null, Encoding.Default);
 Console.WriteLine(t2);
 
 var class1 = new Class1();
