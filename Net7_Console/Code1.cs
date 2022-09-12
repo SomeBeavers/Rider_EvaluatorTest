@@ -16,6 +16,12 @@ public class Code1
             : Method2();
     }
 
+    public int Recursion(int i)
+    {
+        //return Recursion(i);
+        return 1;
+    }
+
     private InnerClass Method2()
     {
         return null;

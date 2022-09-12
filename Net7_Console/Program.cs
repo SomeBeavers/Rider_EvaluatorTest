@@ -22,7 +22,12 @@ Console.WriteLine();
 LocalFunc();
 LocalFunc();
 
+code1.Recursion(2);
 
+var useNuget = new UseNuget();
+var s = useNuget.ToString();
+
+Console.WriteLine(UseNuget.MyStaticField);
 
 // Console.WriteLine("Hello, World!");
 // int t = 1;
