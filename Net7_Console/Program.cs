@@ -4,14 +4,34 @@ using System.Text;
 using System.Xml;
 using Net7_Console;using Net7_Lib;
 
-Console.WriteLine("Hello, World!");
-int t = 1;
-var t2 = t++;
-TextWriter _out = new StreamWriter(Stream.Null, Encoding.Default);
-Console.WriteLine(t2);
+AllowDisabled1.M();
 
-var class1 = new Class1();
+var innerClasses = new List<InnerClass>();
+var item = new InnerClass(){Name = "Jane Doe"};
+innerClasses.Add(item);
+innerClasses.Add(item);
+var code1 = new Code1();
+code1.Test1(innerClasses);
+string LocalFunc()
+{
+    return null;
+}
 
-class1.Test();
+Console.WriteLine();
 
-var useNuget = new UseNuget();
+LocalFunc();
+LocalFunc();
+
+
+
+// Console.WriteLine("Hello, World!");
+// int t = 1;
+// var t2 = t++;
+// TextWriter _out = new StreamWriter(Stream.Null, Encoding.Default);
+// Console.WriteLine(t2);
+//
+// var class1 = new Class1();
+//
+// class1.Test();
+//
+// var useNuget = new UseNuget();
