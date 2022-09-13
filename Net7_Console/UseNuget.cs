@@ -15,7 +15,7 @@ public class UseNuget
 
     public override string ToString()
     {
-        MyStaticField++;
+        //MyStaticField++;
         return $"Static field: {MyStaticField}";
     }
 }

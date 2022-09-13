@@ -29,6 +29,11 @@ var s = useNuget.ToString();
 
 Console.WriteLine(UseNuget.MyStaticField);
 
+
+var classWithProperties = new ClassWithProperties();
+
+Console.WriteLine(classWithProperties);
+
 // Console.WriteLine("Hello, World!");
 // int t = 1;
 // var t2 = t++;
