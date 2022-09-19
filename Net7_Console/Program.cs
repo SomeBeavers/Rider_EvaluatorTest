@@ -78,7 +78,222 @@ Methods.StaticMethod(out var myInnerMethod);
 
 var staticFields = new StaticFields();
 
-var staticField = StaticFields.StaticField;
+dynamic staticField = StaticFields.StaticField;
+
+Console.WriteLine(staticField);
+
+string s22 = "test";
+var v = new { Amount = 108, Message = "Hello" };
+
+Console.WriteLine(v.Amount + v.Message);
+
+var loops = new Loops();
+loops.Test(new List<LoopsInnerClass>()
+{
+    new LoopsInnerClass()
+    {
+        Name = "jane doe",
+        Ints = new(){1,2,3,4,5,6}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    },
+    
+    new LoopsInnerClass()
+    {
+        Name = "john doe",
+        Ints = new(){1,2,3}
+    }
+});
 
 // Console.WriteLine("Hello, World!");
 // int t = 1;
