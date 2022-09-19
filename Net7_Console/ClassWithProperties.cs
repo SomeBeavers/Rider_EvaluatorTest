@@ -2,8 +2,15 @@
 
 namespace Net7_Console;
 
-public class ClassWithProperties
+public class ClassWithProperties:IDisposable
 {
+    public void Deconstruct(out string name, out int myReadonlyField, out List<AnotherClass> listAutoProperty)
+    {
+        name = _name;
+        myReadonlyField = MyReadonlyField;
+        listAutoProperty = ListAutoProperty;
+    }
+
     private string _name;
 
     public ClassWithProperties(List<AnotherClass> listAutoProperty)
@@ -22,7 +29,7 @@ public class ClassWithProperties
 
         List<int> myCollection = new List<int>(){1,2,3,4,5,6};
         int x = 0;
-        while (x <100000)
+        while (x <100)
         {
             myCollection.Add(x);
             x++;
@@ -32,6 +39,8 @@ public class ClassWithProperties
             MyStaticField += s;
             MyReadonlyField += 1;
         }
+
+        var myRecord = new MyRecord(new List<string>(){"1", "2", "3"}, 1);
     }
 
     private static int MyStaticField = 0;
@@ -45,6 +54,18 @@ public class ClassWithProperties
         get => _name;
         set => _name = value;
     }
+
+    public void Dispose()
+    {
+        Console.WriteLine(Name);
+        Name = "";
+        // this.Dispose();
+    }
+}
+
+record MyRecord(List<string> Names, int i)
+{
+    
 }
 
 public class AnotherClass

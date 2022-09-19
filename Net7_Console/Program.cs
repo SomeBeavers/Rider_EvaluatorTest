@@ -32,7 +32,53 @@ Console.WriteLine(UseNuget.MyStaticField);
 
 var classWithProperties = new ClassWithProperties();
 
+var (name, field, list) = new ClassWithProperties();
+
 Console.WriteLine(classWithProperties);
+Console.WriteLine(name);
+Console.WriteLine(field);
+Console.WriteLine(list);
+
+
+var struct1 = new StructWithOperatorOverload("Test");
+var struct2 = new StructWithOperatorOverload(" Name");
+
+Console.WriteLine("");
+Console.WriteLine(struct1 + struct2);
+
+
+
+void LocalMethod()
+{
+    using var x = new ClassWithProperties();
+}
+
+LocalMethod();
+
+
+var record = new Record(new InnerStruct1("My test name"), "Test");
+
+
+Console.WriteLine(record.Name);
+
+
+IInterfaceWithDefault myClass = new ClassImplementingInterface();
+
+Console.WriteLine(myClass);
+
+myClass.TestDefault();
+
+var methods = new Methods();
+
+await methods.MethodAsync();
+
+methods.AnonymousMethod("dog");
+Methods.StaticMethod(out var myInnerMethod);
+
+
+var staticFields = new StaticFields();
+
+var staticField = StaticFields.StaticField;
 
 // Console.WriteLine("Hello, World!");
 // int t = 1;
